@@ -14,7 +14,6 @@ export async function POST(req: Request) {
       )
     }
 
-
     const baseUrl = process.env.BASE_URL || process.env.NEXT_PUBLIC_BASE_URL
     if (!baseUrl) {
       console.error("[v0] BASE_URL is not configured")
@@ -23,7 +22,6 @@ export async function POST(req: Request) {
         { status: 500 },
       )
     }
-
 
     const response = await fetch("https://paysuite.tech/api/v1/payments", {
       method: "POST",
@@ -42,7 +40,6 @@ export async function POST(req: Request) {
     })
 
     const data = await response.json()
-
 
     if (!response.ok) {
       return NextResponse.json({ error: data.message || "Erro na API de pagamento" }, { status: response.status })

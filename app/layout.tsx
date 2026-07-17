@@ -7,12 +7,15 @@ import { Suspense } from "react"
 import "./globals.css"
 import { GoogleAnalytics } from '@next/third-parties/google'
 
-
 export const metadata: Metadata = {
-  title: "Curso Completo de Forex - Estratégias Lucrativas",
+  title: "CONFIANÇA · CORPO · LIBERDADE — O Guia Completo da Ginecomastia Masculina",
   description:
-    "Aprenda a operar no mercado Forex do zero ao avançado. Estratégias comprovadas, resultados reais e suporte completo.",
-  generator: "v0.app",
+    "O guia definitivo para homens que querem vencer a ginecomastia: treino, nutrição, estilo e confiança. De 365 MT por apenas 199 MT. Oferta por tempo limitado.",
+  openGraph: {
+    title: "CONFIANÇA · CORPO · LIBERDADE — O Guia Completo da Ginecomastia Masculina",
+    description: "Resgate a sua confiança, defina o peitoral e vestir o que quiser sem vergonha. Guia completo com treino, nutrição e estilo.",
+    type: "website",
+  },
 }
 
 export default function RootLayout({
